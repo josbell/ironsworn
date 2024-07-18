@@ -1,0 +1,8 @@
+
+
+<ng-container *ngFor="let asset of assets">
+  <h2>{{asset.title}}</h2>
+  <ng-container *ngFor="let ability of asset.abilities">
+    <li><b>{{ability.title}}{{ability.title ? ':' : ''}}</b>  {{ability.description}}</li>
+  </ng-container>
+</ng-container>
